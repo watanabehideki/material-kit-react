@@ -7,7 +7,7 @@ const usePageTracking = () => {
 
   useEffect(() => {
     // Google Analytics 測定 ID を入力して設定
-    ReactGA.initialize(process.env.GA_ID, {
+    ReactGA.initialize(process.env.REACT_APP_GA_ID, {
       gtagOptions: {
         debug: process.env.NODE_ENV === "development"
       }
