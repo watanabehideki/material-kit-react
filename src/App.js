@@ -1,3 +1,4 @@
+import usePageTracking from './hooks/usePageTracking';
 // routes
 import Router from './routes';
 // theme
@@ -9,6 +10,7 @@ import { StyledChart } from './components/chart';
 // ----------------------------------------------------------------------
 
 export default function App() {
+  usePageTracking()
   return (
     <ThemeProvider>
       <ScrollToTop />
